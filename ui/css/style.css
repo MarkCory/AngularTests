@@ -1,1 +1,6 @@
 p {color:red; font-size:16px;}
+.danger {background: #E33; color:#FF0;}
+.danger p {color:#FF0;}
+.wonder {background:lightblue; color:darkblue;}
+.wonder p {color:darkblue;}
+input {width:250px;}
