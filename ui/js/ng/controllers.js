@@ -7,3 +7,9 @@ angTestApp.controller('testController', function($scope){
 		{'name':'third', 'value':3}
 	];
 });
+
+angTestApp.filter('length', function(){
+	return function(text){
+		return text.length;
+	}
+});
