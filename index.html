@@ -7,9 +7,9 @@
 	<script src="ui/js/ng/controllers.js"></script>
 	<link rel="stylesheet" href="ui/css/style.css">
 </head>
-<body ng-controller="testController">
-	<input type="text" ng-model="styles.class" placeholder="Enter 'danger' or 'wonder' here">
-	<div ng-class="styles.class">
+<body ng-controller="testController as entries">
+	<input type="text" ng-model="entries.styles.class" placeholder="Enter 'danger' or 'wonder' here">
+	<div ng-class="entries.styles.class">
 		<p ng-repeat="entry in vars"><span>{{entry.name}}</span> = <span>{{entry.value}}</span></p>
 	</div>
 </body>
