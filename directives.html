@@ -11,10 +11,12 @@
 	<div ng-controller="TestCtrl">
 		<input ng-model="searchText"></input>
 		<dl>
-			<div class="person" ng-repeat="person in vars | filter:searchText">
-				<people></people>
+			<div class="person" lightup="green" ng-repeat="person in vars | filter:searchText | orderBy:'number'">
+				<people person></people>
 			</div>
 		</dl>
+	<div serf></div>
 	</div>
+	
 </body>
 </html>

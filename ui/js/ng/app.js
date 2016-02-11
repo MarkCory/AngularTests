@@ -24,4 +24,27 @@ testApp.controller('TestCtrl', function($scope){
 		restrict: "E",
 		template: '<dt>{{person.name}}</dt><dd>{{person.description}}</dd>'
 	};
-});
+})
+.directive('lightup', function(){
+	return function(scope, element, attrs){
+		element.bind("mouseenter", function(){
+			if(attrs.lightup){
+				if (attrs.lightup == "green"){
+					element.addClass("lightupgrn");
+				}
+			}
+			element.addClass("lightup");
+		});
+		element.bind("mouseleave", function(){
+			element.removeClass("lightup");
+		})
+	}
+})
+.directive('serf', function(){
+	return{
+		restrict: "A",
+		link: function(){
+			console.log("it works this way too.")
+		}
+	}
+})

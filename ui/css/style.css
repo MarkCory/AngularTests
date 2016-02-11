@@ -4,7 +4,7 @@ p {color:red; font-size:16px;}
 .wonder {background:lightblue; color:darkblue;}
 .wonder p {color:darkblue;}
 input {width:250px;}
-.person {background: #EFEFEF; margin:0 0 .5em; padding:1em;}
+.person {background: #EFEFEF; margin:0 0 .5em; padding:1em; transition:background .4s;}
 .person dt {float:left;}
 .person dd {float:left; margin-left:2em;}
 .person:after {   
@@ -14,3 +14,5 @@ input {width:250px;}
 	height: 0; 
 	clear: both;
 }
+.lightup {background:#FF0; cursor:pointer;}
+.lightupgrn {background:#0F0; cursor:pointer;}
