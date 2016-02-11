@@ -1,0 +1,9 @@
+{
+	"projectShortName": "Georgetown Campaign Site",
+	"projectLongName": "For Generations to Come, the Campaign for Georgetown",
+	"description": "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto mollitia quod, odit quisquam et veritatis delectus laboriosam perferendis nemo debitis inventore. Asperiores saepe officia excepturi accusamus deserunt consequuntur corporis quam!</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt eveniet, modi officiis hic velit deleniti, possimus rerum repellendus maiores totam quod nam ad atque distinctio fuga nostrum molestias animi repudiandae?</p>",
+	"path":"assets/projects/campaign/",
+	"images":["campaign_01.jpg", "campaign_02.jpg"],
+	"animations":["campaign_01.gif", "campaign_02.gif"],
+	"tags":["html", "css", "js", "photomanip"]
+}
