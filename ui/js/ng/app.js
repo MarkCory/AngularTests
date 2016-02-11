@@ -36,6 +36,11 @@ testApp.controller('TestCtrl', function($scope){
 			element.addClass("lightup");
 		});
 		element.bind("mouseleave", function(){
+			if(attrs.lightup){
+				if(attrs.lightup.length > 0){
+					element.removeClass("lightupgrn");
+				}
+			}
 			element.removeClass("lightup");
 		})
 	}
