@@ -1,9 +1,19 @@
-{
+[{
 	"projectShortName": "Georgetown Campaign Site",
 	"projectLongName": "For Generations to Come, the Campaign for Georgetown",
-	"description": "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto mollitia quod, odit quisquam et veritatis delectus laboriosam perferendis nemo debitis inventore. Asperiores saepe officia excepturi accusamus deserunt consequuntur corporis quam!</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt eveniet, modi officiis hic velit deleniti, possimus rerum repellendus maiores totam quod nam ad atque distinctio fuga nostrum molestias animi repudiandae?</p>",
-	"path":"assets/projects/campaign/",
-	"images":["campaign_01.jpg", "campaign_02.jpg"],
-	"animations":["campaign_01.gif", "campaign_02.gif"],
-	"tags":["html", "css", "js", "photomanip"]
-}
+	"descA": "This site was created to showcase Georgetown University's $1.5 billion dollar campaign.",
+	"descB": "A notable aspect of this site is the flip ticker on the progress page. The final amounts are entered into hidden fields, read by a jQuery script, then used to animate an array of images until the total is reached.",
+	"path":"assets/Campaign/",
+	"images":["Campaign_1.jpg", "Campaign_2.jpg"],
+	"animations":["Campaign_1.gif"],
+	"tags":["html", "css", "js", "photomanip", "georgetown", "foo"]
+},
+{
+	"projectShortName": "Class Ambassadors",
+	"projectLongName": "",
+	"descA": "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto mollitia quod, odit quisquam et veritatis delectus laboriosam perferendis nemo debitis inventore. Asperiores saepe officia excepturi accusamus deserunt consequuntur corporis quam!</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt eveniet, modi officiis hic velit deleniti, possimus rerum repellendus maiores totam quod nam ad atque distinctio fuga nostrum molestias animi repudiandae?</p>",
+	"path":"assets/Ambassadors/",
+	"images":["Ambassadors_1.jpg"],
+	"animations":["Ambassadors_1.gif"],
+	"tags":["html", "css", "js", "photomanip", "georgetown", "bar"]
+}]

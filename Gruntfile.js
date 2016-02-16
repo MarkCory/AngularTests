@@ -2,7 +2,7 @@ module.exports = function(grunt) {
 	grunt.initConfig({
 		watch:{
 			options:{livereload:true},
-			files:['port/**', 'server/**'],
+			files:['AngularTests/**', 'server/**'],
 			tasks:[]
 		},
 		express:{
@@ -19,6 +19,6 @@ module.exports = function(grunt) {
 	
 	grunt.loadNpmTasks("grunt-contrib-watch");
 	grunt.loadNpmTasks("grunt-express");
-	grunt.registerTask("server", ["express", "watch"])
+	grunt.registerTask("server", ["express", "watch"]);
 	
 };
