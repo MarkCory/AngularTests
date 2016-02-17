@@ -22,7 +22,7 @@ testApp.controller('TestCtrl', function($scope){
 .directive('people', function(){
 	return {
 		restrict: "E",
-		template: '<dt>{{person.name}}</dt><dd>{{person.description}}</dd>'
+		template: '<dt>{{person.name | sanitize}}</dt><dd>{{person.description | sanitize}}</dd>'
 	};
 })
 .directive('lightup', function(){
