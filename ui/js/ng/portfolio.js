@@ -12,6 +12,22 @@ port.controller("PortCtrl", ['$scope', '$http', function($scope, $http){
 		restrict: 'E',
 		template: '<p ng-bind-html="project.descA"></p><p ng-bind-html="project.descB"></p>'
 	}
+})
+.directive("masonry", function(){
+	return {
+		restrict: 'C',
+		link: function(scope, elem, attrs){
+			// elem.masonry({ itemSelector: '.masonry-brick', columnWidth: 200});
+		}
+	}
+})
+.directive("masonry-brick", function(){
+	return {
+		restrict: 'C',
+		link: function(scope, elem, attrs){
+			// elem.parents('.masonry').masonry('reload');
+		}
+	}
 });
 
 port.filter("sanitize", ['$sce', function($sce){
