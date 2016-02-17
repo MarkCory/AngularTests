@@ -12,7 +12,7 @@
 {
 	"projectShortName": "Class Ambassadors",
 	"projectLongName": "",
-	"descA":"",
+	"descA":"Georgetown's Office of Advancement maintains outreach efforts to leadership-oriented members of the alumni community. This endeavor needed a location to host helpful documents and track class donation progress. The class progress page makes use of Charts.js for animated graphs.",
 	"descB":"",
 	"path":"assets/Ambassadors/",
 	"images":["Ambassadors_1.jpg"],
@@ -110,8 +110,8 @@
 },
 {
 	"projectShortName": "CFR",
-	"projectLongName": "",
-	"descA":"",
+	"projectLongName": "Corporate and Foundation Relations",
+	"descA":"This is a jQuery application designed to search grant submissions. The data is stored using a Google form, and parsed from the resulting CSV into JSON.",
 	"descB":"",
 	"path":"assets/CFR/",
 	"images":["CFR_01.png", "CFR_02.png", "CFR_03.jpg"],

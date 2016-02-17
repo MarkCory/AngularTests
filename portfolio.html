@@ -6,25 +6,29 @@
 	<script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.min.js" type="text/javascript"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular-sanitize.js"></script>
-	<script src="https://npmcdn.com/masonry-layout@4.0.0/dist/masonry.pkgd.min.js"></script>
+	<script src="node_modules/angular-pageslide-directive/dist/angular-pageslide-directive.min.js"></script>
 	<script src="ui/js/ng/portfolio.js"></script>
 	<link rel="stylesheet" href="ui/css/portfolio.css">
 </head>
 <body ng-app="portfolio">
 	<div ng-controller="PortCtrl">
-	<label for="projSearch">Search Portfolio:</label><input type="text" ng-model="projSearch" id="projSearch" />
+	<div class="searchBar"><label for="projSearch">Search Portfolio:</label><input type="text" placeholder="Search projects" ng-model="projSearch" id="projSearch" /></div>
 		<div>
 			<div class="proj" ng-repeat="project in projects | filter:projSearch">
-				<h2>{{project.projectShortName}}</h2>
-				<h3><small>{{project.projectLongName}}</small></h3>
 				<div class="heroImg" ng-repeat="image in project.images | limitTo: 1" ng-show="project.images">
 					<img ng-src="{{project.path}}{{image}}" class="projImg" />
 				</div>
 				<desc></desc>
+
 				<!-- <p ng-show="project.descA">{{project.descA}}<p>
 				<p ng-show="project.descB">{{project.descB}}</p> -->
 			</div>
 		</div>
+		<pageslide ps-open="checked" ps-side="right">
+			<div>
+				test
+			</div>
+		</pageslide>
 	</div>
 </body>
 </html>

@@ -1,4 +1,4 @@
-port = angular.module("portfolio", ['ngSanitize']);
+port = angular.module("portfolio", ['ngSanitize', 'pageslide-directive']);
 
 port.controller("PortCtrl", ['$scope', '$http', function($scope, $http){
 	$http.get("ui/js/ng/projects.json")
@@ -6,11 +6,14 @@ port.controller("PortCtrl", ['$scope', '$http', function($scope, $http){
 			$scope.projects = result.data;
 			console.log(result.data);
 		});
+	$('.proj').bind('click', function(){
+
+	})
 }])
 .directive("desc", function(){
 	return {
 		restrict: 'E',
-		template: '<p ng-bind-html="project.descA"></p><p ng-bind-html="project.descB"></p>'
+		template: '<h2>{{project.projectShortName}}</h2><h3><small>{{project.projectLongName}}</small></h3><p ng-bind-html="project.descA"></p><a class="tiny button" href="" ng-click="toggle()">Fastbro</a>'
 	}
 })
 .directive("masonry", function(){
