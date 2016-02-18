@@ -1,6 +1,6 @@
 [{
 	"projectShortName": "Georgetown Campaign Site",
-	"projectLongName": "For Generations to Come, the Campaign for Georgetown",
+	"projectLongName": "",
 	"descA": "This site was created to showcase Georgetown University's $1.5 billion dollar campaign.",
 	"descB": "A notable aspect of this site is the flip ticker on the progress page. The final amounts are entered into hidden fields, read by a jQuery script, then used to animate an array of images until the total is reached.",
 	"path":"assets/Campaign/",
@@ -12,7 +12,7 @@
 {
 	"projectShortName": "Class Ambassadors",
 	"projectLongName": "",
-	"descA":"Georgetown's Office of Advancement maintains outreach efforts to leadership-oriented members of the alumni community. This endeavor needed a location to host helpful documents and track class donation progress. The class progress page makes use of Charts.js for animated graphs.",
+	"descA":"Georgetown's Office of Advancement needed a website to provide resources to class leaders and relay class fundraising information. The class progress page makes use of Charts.js for animated graphs.",
 	"descB":"",
 	"path":"assets/Ambassadors/",
 	"images":["Ambassadors_1.jpg"],
@@ -56,7 +56,7 @@
 {
 	"projectShortName": "Georgetown Giving Donation Form",
 	"projectLongName": "",
-	"descA":"",
+	"descA":"The backend for the university's giving forms were vendor-provided and the supplied front-end design was bare. I had access to a stylesheet and a javascript file to effect changes.",
 	"descB":"",
 	"path":"assets/Giving/",
 	"images":[],
@@ -67,7 +67,7 @@
 {
 	"projectShortName": "John Carroll Weekend",
 	"projectLongName": "",
-	"descA":"",
+	"descA":"An annual university event that brings alumni together to share ideas and enjoy the culture of its international locations. The responsive design features transitioning background images overlaid with semi-transparent panels. ",
 	"descB":"",
 	"path":"assets/JCW/",
 	"images":["JCW_01.jpg", "JCW_02.jpg"],
@@ -78,29 +78,29 @@
 {
 	"projectShortName": "Georgetown University Reunion",
 	"projectLongName": "",
-	"descA":"",
+	"descA":"Georgetown University's reunion event site. ",
 	"descB":"",
 	"path":"assets/Reunion/",
 	"images":["ReunionHP_01.png", "ReunionMenu_01.png"],
 	"animations":["Reunion_1.gif"],
-	"year":"",
+	"year":"2011",
 	"tags":["html", "css", "js"]
 },
 {
 	"projectShortName": "Georgetown University Homecoming",
 	"projectLongName": "",
-	"descA":"",
+	"descA":"Georgetown University's homecoming event site.",
 	"descB":"",
 	"path":"assets/Homecoming/",
 	"images":[],
 	"animations":["HC_1.gif"],
 	"year":"",
-	"tags":["html", "css", "js"]
+	"tags":["html", "css", "js", "flash"]
 },
 {
 	"projectShortName": "Georgetown Investment Report",
 	"projectLongName": "",
-	"descA":"",
+	"descA":"The advancement office at Georgetown must make its case to donors and board members. The fundraising data was traditionally presented in printed format, and I undertook the creation of its digital counterpart.",
 	"descB":"",
 	"path":"assets/Investment_Reports/",
 	"images":["2015Cover.png"],
@@ -109,8 +109,8 @@
 	"tags":["html", "css", "js"]
 },
 {
-	"projectShortName": "CFR",
-	"projectLongName": "Corporate and Foundation Relations",
+	"projectShortName": "Corporate and Foundation Relations",
+	"projectLongName": "",
 	"descA":"This is a jQuery application designed to search grant submissions. The data is stored using a Google form, and parsed from the resulting CSV into JSON.",
 	"descB":"",
 	"path":"assets/CFR/",
@@ -122,7 +122,7 @@
 {
 	"projectShortName": "Georgetown Alumni Weekend: Hong Kong",
 	"projectLongName": "",
-	"descA":"",
+	"descA":"Georgetown hosts seasonal alumni events as well as international gatherings to ensure that the most far-flung Hoyas maintain contact with the Georgetown community.",
 	"descB":"",
 	"path":"assets/AlumniWeekend/",
 	"images":[],
@@ -133,7 +133,7 @@
 {
 	"projectShortName": "March Madness 2014",
 	"projectLongName": "",
-	"descA":"",
+	"descA":"This site commemorated the 30th anniversary of the 1984 NCAA championship win by the Georgetown Hoyas. The experience is driven by a masonry.js interface where tiles part to present content in the center.",
 	"descB":"",
 	"path":"assets/MM2014/",
 	"images":["MM_1.jpg"],

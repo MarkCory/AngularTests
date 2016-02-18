@@ -6,6 +6,7 @@ port.controller("PortCtrl", ['$scope', '$http', function($scope, $http){
 			$scope.projects = result.data;
 			console.log(result.data);
 		});
+	$scope.checked;
 	$('.proj').bind('click', function(){
 
 	})
@@ -13,7 +14,9 @@ port.controller("PortCtrl", ['$scope', '$http', function($scope, $http){
 .directive("desc", function(){
 	return {
 		restrict: 'E',
-		template: '<h2>{{project.projectShortName}}</h2><h3><small>{{project.projectLongName}}</small></h3><p ng-bind-html="project.descA"></p><a class="tiny button" href="" ng-click="toggle()">Fastbro</a>'
+		template: '<h2>{{project.projectShortName}}</h2>'+
+		'<h3 ng-show="{{project.projectLongName}}"><small>{{project.projectLongName}}</small></h3>'+
+		'<p ng-bind-html="project.descA"></p>'
 	}
 })
 .directive("masonry", function(){

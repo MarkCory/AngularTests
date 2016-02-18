@@ -12,7 +12,7 @@
 </head>
 <body ng-app="portfolio">
 	<div ng-controller="PortCtrl">
-	<div class="searchBar"><label for="projSearch">Search Portfolio:</label><input type="text" placeholder="Search projects" ng-model="projSearch" id="projSearch" /></div>
+	<div class="searchBar"><label for="projSearch"></label><input type="text" placeholder="Search portfolio" ng-model="projSearch" id="projSearch" /></div>
 		<div>
 			<div class="proj" ng-repeat="project in projects | filter:projSearch">
 				<div class="heroImg" ng-repeat="image in project.images | limitTo: 1" ng-show="project.images">
