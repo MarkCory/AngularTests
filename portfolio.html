@@ -14,7 +14,7 @@
 	<div ng-controller="PortCtrl">
 	<div class="searchBar"><label for="projSearch"></label><input type="text" placeholder="Search portfolio" ng-model="projSearch" id="projSearch" /></div>
 		<div>
-			<div class="proj" ng-repeat="project in projects | filter:projSearch">
+			<div class="proj" ng-click="toggle(project)" ng-repeat="project in projects | filter:projSearch">
 				<div class="heroImg" ng-repeat="image in project.images | limitTo: 1" ng-show="project.images">
 					<img ng-src="{{project.path}}{{image}}" class="projImg" />
 				</div>
@@ -24,11 +24,11 @@
 				<p ng-show="project.descB">{{project.descB}}</p> -->
 			</div>
 		</div>
-		<pageslide ps-open="checked" ps-side="right">
-			<div>
-				test
-			</div>
-		</pageslide>
+	<pageslide ps-open="checked" ps-side="right">
+		<div class="longdesc">
+			
+		</div>
+	</pageslide>
 	</div>
 </body>
 </html>
