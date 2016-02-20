@@ -1,6 +1,18 @@
 /* portfolio.css */
-.searchBar {background:#EFEFEF; padding:1em;}
-.searchBar label {font-family:sans-serif; margin-right:1em;}
+html {
+  overflow-x: hidden;
+}
+
+body {
+  position: absolute;
+  transition: all 0.5s ease;
+  margin:0;
+}
+header {height:240px; background:#333; position: relative;}
+header h1, header h2 {margin:0;}
+header h2 {font-style: italic;}
+.searchBar {background:rgba(51,51,51,1); position:absolute; bottom:0; padding:1em;}
+.searchBar label {font-family:sans-serif; margin-right:1em; display:none;}
 .searchBar input {height:2.4rem; font-size:1.8rem; width:25rem; padding-left:1em; color:#06C;}
 .proj {
 	background: #666; 
@@ -20,7 +32,7 @@
 	top:0; left:0;
 	width:100%;
 	height:240px;
-	background: rgba(0,0,0,.5);
+	background: rgba(0,0,0,.0);
 	z-index: 2;
 	transition: background .4s;
 }
@@ -36,10 +48,10 @@
 	position:absolute;
 	top:0; left:0;
 	width:100%;
-	background: rgba(0,0,0,.2);
+	background: rgba(0,0,0,.5);
 }
 
-desc {height: 240px; position:absolute; z-index: 99; color:#000; background:rgba(255,255,255,.8); width:100%; left:0em; top:300px; transition: top .4s; }
+desc {height: 240px; position:absolute; z-index: 99; color:#000; background:rgba(144,236,198,.66); width:100%; left:0em; top:300px; transition: top .4s; border-top-left-radius: 2em;}
 desc p {margin:20px; font-size:.9rem; line-height:1.2em;}
 desc h2, desc h3 {margin:20px; padding:0;}
 desc h2 {font-size:16px;}

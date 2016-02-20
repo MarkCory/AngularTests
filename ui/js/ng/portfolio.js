@@ -6,16 +6,30 @@ port.controller("PortCtrl", ['$scope', '$http', function($scope, $http){
 			$scope.projects = result.data;
 			// console.log(result.data);
 		});
+	//variables and functions used for the pageslide directive	
 	$scope.checked = false;
 	$scope.current;
+	$scope.closed = "close";
+
 	$scope.toggle = function(o){
-		$scope.current = o.descB;
-		if($scope.checked){
-			if($scope.current == ""){
-				$scope.current = "<p>Nothing here yet.</p>"
-			}
+		// console.log(o);
+		$scope.swidth = window.innerWidth;
+		if(o == $scope.closed){
+			console.log("o is equal, closing panel.");
+			$scope.checked = false;
 		}else{
-			$scope.checked = !$scope.checked;
+			console.log("o is not equal, results:\n");
+			console.log("o:"+o+"\nscope.closed:"+$scope.closed);
+			$scope.current = o.descB;		
+			if($scope.checked){
+				console.log("panel already open, changing content to current project...")
+				if($scope.current == ""){
+					$scope.current = "<p>Nothing here yet.</p>"
+				}
+			}else{
+				console.log("toggling panel.")		
+				$scope.checked = !$scope.checked;
+			}
 		}
 	}
 
@@ -34,7 +48,20 @@ port.controller("PortCtrl", ['$scope', '$http', function($scope, $http){
 .directive("longdesc", function(){
 	return {
 		restrict: 'C',
-		template: '<div ng-bind-html="current"></div>'
+		template: '<div ng-bind-html="current"></div>'+
+		'<a ng-click="toggle('+"'close'"+')">Close!</a>'
+	}
+})
+.directive("resize", function($window){
+	return {
+		restrict: 'A',
+		link: function(scope){
+			angular.element($window).on('resize', function(scope){
+				console.log(scope);
+				scope.swidth = window.innerWidth;
+				// scope.toggle("close");
+			});
+		}
 	}
 })
 .directive("masonry", function(){

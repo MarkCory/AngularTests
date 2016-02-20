@@ -1,5 +1,5 @@
 [{
-	"projectShortName": "Georgetown Campaign Site",
+	"projectShortName": "Campaign for Georgetown",
 	"projectLongName": "",
 	"descA": "This site was created to showcase Georgetown University's $1.5 billion dollar campaign.",
 	"descB": "A notable aspect of this site is the flip ticker on the progress page. The final amounts are entered into hidden fields, read by a jQuery script, then used to animate an array of images until the total is reached.",
@@ -21,7 +21,7 @@
 	"tags":["html", "css", "js", "photomanip", "georgetown", "bar"]
 },
 {
-	"projectShortName": "Georgetown University Advent Calendar",
+	"projectShortName": "Advent Calendar",
 	"projectLongName": "",
 	"descA":"Launched in December 2014, this advent calendar counted down until Christmas day with each day's icon flipped to red. Users can click on a day to find a goodie, game, or other activity.",
 	"descB":"This site makes use of masonry.js to display the days as well as the panels for each activity. I also had fun experimenting with CSS transitions to create the flip effect for each calendar day. At some point, I became a little too creative and a feature had to be stripped from the final product. However, it quietly lives on as an easter egg buried in the corner of the browser.",
@@ -45,7 +45,7 @@
 {
 	"projectShortName": "Georgetown Alumni Magazine",
 	"projectLongName": "",
-	"descA":"Before our publications were housed in a Drupal environment, I was tasked with building a site to host featured articles separate from the main alumni site, which at the time was plagued by an unworkable CMS.",
+	"descA":"Before Georgetown alumni publications were housed in a Drupal environment, I was tasked with building a site to host featured articles separate from the main alumni site, which at the time was plagued by an unworkable CMS.",
 	"descB":"This site was one of my first attempts at responsive design. I foolhardily avoided using a preexisting library and created a stylesheet on my own. The design featured articles arranged by tier, with higher priority content occupying more screen space. The site was received favorably by coworkers and readers, and continued for two years until our transition to Drupal.",
 	"path":"assets/Magazine/",
 	"images":["Magazine_1.jpg", "Magazine_2.jpg"],
