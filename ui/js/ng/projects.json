@@ -6,7 +6,7 @@
 	"path":"assets/Campaign/",
 	"images":["Campaign_1.jpg", "Campaign_2.jpg"],
 	"animations":["Campaign_1.gif"],
-	"year":"2009",
+	"year":2009,
 	"tags":["html", "css", "js", "photomanip", "georgetown", "foo"]
 },
 {
@@ -17,7 +17,7 @@
 	"path":"assets/Ambassadors/",
 	"images":["Ambassadors_1.jpg"],
 	"animations":["Ambassadors_1.gif"],
-	"year":"2013",
+	"year":2013,
 	"tags":["html", "css", "js", "photomanip", "georgetown", "bar"]
 },
 {
@@ -28,7 +28,7 @@
 	"path":"assets/Advent/",
 	"images":["Advent_1.jpg"],
 	"animations":["Advent_1.gif", "Advent_2.gif"],
-	"year":"2014",
+	"year":2014,
 	"tags":["html", "css", "js", "masonry"]
 },
 {
@@ -39,7 +39,7 @@
 	"path":"assets/Hoya_Holiday/",
 	"images":[],
 	"animations":["HoyaHoliday_01.gif", "HoyaHoliday_02.gif"],
-	"year":"2012",
+	"year":2012,
 	"tags":["html", "css", "js", "parallax"]
 },
 {
@@ -50,7 +50,7 @@
 	"path":"assets/Magazine/",
 	"images":["Magazine_1.jpg", "Magazine_2.jpg"],
 	"animations":["Magazine_1.gif"],
-	"year":"",
+	"year":2013,
 	"tags":["html", "css", "js", "responsive"]
 },
 {
@@ -61,7 +61,7 @@
 	"path":"assets/Giving/",
 	"images":[],
 	"animations":["Form_01.gif", "Form_02.gif"],
-	"year":"",
+	"year":2015,
 	"tags":["html", "css", "js"]
 },
 {
@@ -72,7 +72,7 @@
 	"path":"assets/JCW/",
 	"images":["JCW_01.jpg", "JCW_02.jpg"],
 	"animations":["JCW_01.gif", "JCW_02.gif"],
-	"year":"",
+	"year":2011,
 	"tags":["html", "css", "js"]
 },
 {
@@ -83,7 +83,7 @@
 	"path":"assets/Reunion/",
 	"images":["ReunionHP_01.png", "ReunionMenu_01.png"],
 	"animations":["Reunion_1.gif"],
-	"year":"2011",
+	"year":2011,
 	"tags":["html", "css", "js"]
 },
 {
@@ -94,7 +94,7 @@
 	"path":"assets/Homecoming/",
 	"images":[],
 	"animations":["HC_1.gif"],
-	"year":"",
+	"year":2012,
 	"tags":["html", "css", "js", "flash"]
 },
 {
@@ -105,7 +105,7 @@
 	"path":"assets/Investment_Reports/",
 	"images":["2015Cover.png"],
 	"animations":["InvestmentReport_2014.gif", "InvestmentReport_2014_2.gif", "InvestmentReport_2015_1.gif"],
-	"year":"",
+	"year":2014,
 	"tags":["html", "css", "js"]
 },
 {
@@ -116,7 +116,7 @@
 	"path":"assets/CFR/",
 	"images":["CFR_01.png", "CFR_02.png", "CFR_03.jpg"],
 	"animations":[""],
-	"year":"",
+	"year":2013,
 	"tags":["html", "css", "js"]
 },
 {
@@ -127,7 +127,7 @@
 	"path":"assets/AlumniWeekend/",
 	"images":[],
 	"animations":["HK_1.gif"],
-	"year":"",
+	"year":2014,
 	"tags":["html", "css", "js"]
 },
 {
@@ -138,7 +138,7 @@
 	"path":"assets/MM2014/",
 	"images":["MM_1.jpg"],
 	"animations":["MM_1.gif", "MM_2.gif"],
-	"year":"",
+	"year":2014,
 	"tags":["html", "css", "js"]
 },
 {
