@@ -48,8 +48,7 @@ port.controller("PortCtrl", ['$scope', '$http', function($scope, $http){
 .directive("longdesc", function(){
 	return {
 		restrict: 'C',
-		template: '<div ng-bind-html="current"></div>'+
-		'<a ng-click="toggle('+"'close'"+')">Close!</a>'
+		templateUrl: 'project.html' 
 	}
 })
 .directive("resize", function($window){

@@ -18,9 +18,9 @@
 			<div class="searchBar"><label for="projSearch"></label><input type="text" placeholder="Search portfolio" ng-model="projSearch" id="projSearch" /></div>
 		</header>
 		<div class="portfolio">
-			<div class="proj" ng-click="toggle(project)" ng-repeat="project in projects | filter:projSearch | orderBy:'-year'">
-				<div class="heroImg" ng-repeat="image in project.images | limitTo: 1" ng-show="project.images">
-					<img ng-src="{{project.path}}{{image}}" class="projImg" />
+			<div class="proj" ng-click="toggle(project)" ng-repeat="project in projects | filter:projSearch | orderBy:'year'">
+				<div class="heroImg" ng-repeat="cover in project.cover | limitTo: 1">
+					<img ng-src="{{project.path}}{{cover}}" class="projImg" />
 				</div>
 				<desc></desc>
 
