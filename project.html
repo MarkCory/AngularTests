@@ -1,4 +1,10 @@
 <section class="project">
 <a class="closeBtn" title="Back to Portfolio" ng-click="toggle('close')">X</a>
 <div ng-bind-html="current"></div>
+<figure ng-show="project.animations">
+	<img ng-src="project.animations" />
+	<figcaption >
+		<p ng-bind-html="project.descB"></p>
+	</figcaption>
+</figure>
 </section>

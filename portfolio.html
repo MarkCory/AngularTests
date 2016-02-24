@@ -13,9 +13,11 @@
 <body ng-app="portfolio" resize>
 	<div ng-controller="PortCtrl" class="container">
 		<header>
-			<h1>Mark Cory Anderson</h1>
-			<h2>Web Developer, Interactive something-something... extraordinare</h2>
-			<div class="searchBar"><label for="projSearch"></label><input type="text" placeholder="Search portfolio" ng-model="projSearch" id="projSearch" /></div>
+			<div class="ego">
+				<h1>Mark Cory Anderson</h1>
+				<h2>Web Developer</h2>
+			</div>
+			<div class="searchBar"><label for="projSearch"></label><input type="text" placeholder="Search Portfolio" ng-model="projSearch" id="projSearch" /></div>
 		</header>
 		<div class="portfolio">
 			<div class="proj" ng-click="toggle(project)" ng-repeat="project in projects | filter:projSearch | orderBy:'year'">

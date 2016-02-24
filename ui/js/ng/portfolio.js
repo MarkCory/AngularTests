@@ -20,7 +20,7 @@ port.controller("PortCtrl", ['$scope', '$http', function($scope, $http){
 		}else{
 			console.log("o is not equal, results:\n");
 			console.log("o:"+o+"\nscope.closed:"+$scope.closed);
-			$scope.current = o.descB;		
+			$scope.current = o;		
 			if($scope.checked){
 				console.log("panel already open, changing content to current project...")
 				if($scope.current == ""){
@@ -48,7 +48,12 @@ port.controller("PortCtrl", ['$scope', '$http', function($scope, $http){
 .directive("longdesc", function(){
 	return {
 		restrict: 'C',
-		templateUrl: 'project.html' 
+		template: '<section class="project">'+
+			'<a class="closeBtn" title="Back to Portfolio" ng-click="toggle('+"'close'"+')">X</a>'+
+			'<div ng-bind-html="current.descB"></div>'+
+			'<img ng-src="{{current.path}}{{current.images[0]}}">'+
+			'<p ng-bind-html="current.descA"></p>'+
+			'</section>'
 	}
 })
 .directive("resize", function($window){
