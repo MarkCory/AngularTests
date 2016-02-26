@@ -8,7 +8,7 @@
 	"images":["Campaign_01.jpg", "Campaign_02.jpg"],
 	"animations":["Campaign_01.gif"],
 	"year":2009,
-	"tags":["html", "css", "js", "photomanip", "georgetown", "foo"]
+	"tags":["html", "css", "javascript", "photoshop", "georgetown", "jQuery"]
 },
 {
 	"projectShortName": "Class Ambassadors",
@@ -20,7 +20,7 @@
 	"images":["Ambassadors_01.jpg"],
 	"animations":["Ambassadors_01.gif"],
 	"year":2013,
-	"tags":["html", "css", "js", "photomanip", "georgetown", "bar"]
+	"tags":["html", "css", "javascript", "photoshop", "georgetown", "charts", "charts.js", "chartsjs", "jQuery"]
 },
 {
 	"projectShortName": "Advent Calendar",
@@ -32,7 +32,7 @@
 	"images":["Advent_01.jpg"],
 	"animations":["Advent_01.gif", "Advent_02.gif"],
 	"year":2014,
-	"tags":["html", "css", "js", "masonry"]
+	"tags":["html", "css", "javascript", "masonry", "photoshop"]
 },
 {
 	"projectShortName": "A Very Hoya Holiday",
@@ -44,7 +44,7 @@
 	"images":[],
 	"animations":["HoyaHoliday_01.gif", "HoyaHoliday_02.gif"],
 	"year":2012,
-	"tags":["html", "css", "js", "parallax"]
+	"tags":["html", "css", "javascript", "parallax", "photoshop"]
 },
 {
 	"projectShortName": "Georgetown Alumni Magazine",
@@ -55,8 +55,8 @@
 	"cover":["Magazine_cover.jpg"],
 	"images":["Magazine_01.jpg", "Magazine_02.jpg"],
 	"animations":["Magazine_01.gif"],
-	"year":2013,
-	"tags":["html", "css", "js", "responsive"]
+	"year":2012,
+	"tags":["html", "css", "javascript", "responsive"]
 },
 {
 	"projectShortName": "Georgetown Giving Donation Form",
@@ -68,7 +68,7 @@
 	"images":[],
 	"animations":["Form_01.gif", "Form_02.gif"],
 	"year":2015,
-	"tags":["html", "css", "js"]
+	"tags":["css", "javascript"]
 },
 {
 	"projectShortName": "John Carroll Weekend",
@@ -80,7 +80,7 @@
 	"images":["JCW_01.jpg", "JCW_02.jpg"],
 	"animations":["JCW_01.gif", "JCW_02.gif"],
 	"year":2013,
-	"tags":["html", "css", "js"]
+	"tags":["html", "css", "javascript", "jQuery", "angular"]
 },
 {
 	"projectShortName": "Georgetown University Reunion",
@@ -92,7 +92,7 @@
 	"images":["ReunionHP_01.png", "ReunionMenu_01.png"],
 	"animations":["Reunion_01.gif"],
 	"year":2011,
-	"tags":["html", "css", "js"]
+	"tags":["html", "css", "javascript", "photoshop"]
 },
 {
 	"projectShortName": "Georgetown University Homecoming",
@@ -104,7 +104,7 @@
 	"images":["HC_cover.jpg"],
 	"animations":["HC_01.gif"],
 	"year":2012,
-	"tags":["html", "css", "js", "flash"]
+	"tags":["html", "css", "javascript", "flash"]
 },
 {
 	"projectShortName": "Georgetown Investment Report",
@@ -116,7 +116,7 @@
 	"images":["2015Cover.png"],
 	"animations":["InvestmentReport_2014.gif", "InvestmentReport_2014_02.gif", "InvestmentReport_2015_01.gif"],
 	"year":2014,
-	"tags":["html", "css", "js"]
+	"tags":["html", "css", "javascript", "jQuery", "responsive"]
 },
 {
 	"projectShortName": "Corporate and Foundation Relations",
@@ -128,7 +128,7 @@
 	"images":["CFR_01.png", "CFR_02.png", "CFR_03.jpg"],
 	"animations":[""],
 	"year":2013,
-	"tags":["html", "css", "js"]
+	"tags":["html", "css", "javascript", "JSON"]
 },
 {
 	"projectShortName": "Georgetown Alumni Weekend: Hong Kong",
@@ -140,7 +140,7 @@
 	"images":[""],
 	"animations":["HK_01.gif"],
 	"year":2014,
-	"tags":["html", "css", "js"]
+	"tags":["html", "css", "javascript"]
 },
 {
 	"projectShortName": "March Madness 2014",
@@ -152,7 +152,7 @@
 	"images":["MM_01.jpg"],
 	"animations":["MM_01.gif", "MM_02.gif"],
 	"year":2014,
-	"tags":["html", "css", "js"]
+	"tags":["html", "css", "javascript", "masonry"]
 },
 {
 	"projectShortName": "Haysbert Moultrie",
@@ -164,7 +164,7 @@
 	"images":["HM_01.png"],
 	"animations":["HM_01.gif"],
 	"year":"",
-	"tags":["html", "css", "js"]
+	"tags":["html", "css", "javascript", "bootstrap"]
 },
 {
 	"projectShortName": "Quality Consultants Group",
@@ -176,5 +176,5 @@
 	"images":["QCG_01.jpg", "QCG_01.png"],
 	"animations":[""],
 	"year":"",
-	"tags":["html", "css", "js"]
+	"tags":["html", "css"]
 }]

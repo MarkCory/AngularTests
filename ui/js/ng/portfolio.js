@@ -14,7 +14,35 @@ port.controller("PortCtrl", ['$scope', '$http', function($scope, $http){
 	$scope.toggle = function(o){
 		// console.log(o);
 		$scope.swidth = window.innerWidth;
-		if(o == $scope.closed){
+		switch(o){
+			case $scope.closed:
+				console.log("o is equal, closing panel.");
+				$scope.checked = false;
+			break;
+			case "menu":
+				console.log("displaying menu");
+				if($scope.checked){
+					$scope.current = "<p>Insert Menu Here</p>"
+				}else{
+					$scope.checked = !$scope.checked;
+					$scope.current = "<p>Insert Menu Here</p>"
+				}
+			break;
+			default:
+			console.log("o is not equal, results:\n");
+			console.log("o:"+o+"\nscope.closed:"+$scope.closed);
+			$scope.current = o;		
+			if($scope.checked){
+				console.log("panel already open, changing content to current project...")
+				if($scope.current == ""){
+					$scope.current = "<p>Nothing here yet.</p>"
+				}
+			}else{
+				console.log("toggling panel.")		
+				$scope.checked = !$scope.checked;
+			}			break;
+		}
+		/*if(o == $scope.closed){ //CHANGE THIS TO A SWITCH STATEMENT, ADD 'MENU' CASE
 			console.log("o is equal, closing panel.");
 			$scope.checked = false;
 		}else{
@@ -30,7 +58,7 @@ port.controller("PortCtrl", ['$scope', '$http', function($scope, $http){
 				console.log("toggling panel.")		
 				$scope.checked = !$scope.checked;
 			}
-		}
+		}*/
 	}
 
 	// $('.proj').bind('click', function(){
@@ -46,13 +74,13 @@ port.controller("PortCtrl", ['$scope', '$http', function($scope, $http){
 	}
 })
 .directive("longdesc", function(){
+
 	return {
 		restrict: 'C',
 		template: '<section class="project">'+
 			'<a class="closeBtn" title="Back to Portfolio" ng-click="toggle('+"'close'"+')">X</a>'+
-			'<div ng-bind-html="current.descB"></div>'+
-			'<img ng-src="{{current.path}}{{current.images[0]}}">'+
 			'<p ng-bind-html="current.descA"></p>'+
+			'<div ng-bind-html="current.descB"></div>'+
 			'</section>'
 	}
 })

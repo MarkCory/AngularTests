@@ -16,8 +16,15 @@
 			<div class="ego">
 				<h1>Mark Cory Anderson</h1>
 				<h2>Web Developer</h2>
+				<div class="contact">
+					<dl>
+						<dd><a>Email Me</a></dd>
+						<dd><a>Call Me</a></dd>
+						<dd><a>LinkedIn</a></dd>
+					</dl>
+				</div>
 			</div>
-			<div class="searchBar"><label for="projSearch"></label><input type="text" placeholder="Search Portfolio" ng-model="projSearch" id="projSearch" /></div>
+			<div class="searchBar"><a ng-click="toggle('menu')">Menu</a><label for="projSearch"></label><input type="text" placeholder="Search Portfolio" ng-model="projSearch" id="projSearch" /></div>
 		</header>
 		<div class="portfolio">
 			<div class="proj" ng-click="toggle(project)" ng-repeat="project in projects | filter:projSearch | orderBy:'year'">
@@ -30,7 +37,7 @@
 				<p ng-show="project.descB">{{project.descB}}</p> -->
 			</div>
 		</div>
-	<pageslide ps-open="checked" ps-side="right" ps-size="100%" ps-push="true" >
+	<pageslide ps-open="checked" ps-side="right" ps-size="38.2%" ps-push="true" >
 		<div class="longdesc">
 			
 		</div>
