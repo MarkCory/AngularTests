@@ -22,25 +22,28 @@ port.controller("PortCtrl", ['$scope', '$http', function($scope, $http){
 			case "menu":
 				console.log("displaying menu");
 				if($scope.checked){
-					$scope.current = "<p>Insert Menu Here</p>"
+					$scope.side = "left";
+					$scope.current = "<p>Insert Menu Here</p>";
 				}else{
+					$scope.side = "left";
 					$scope.checked = !$scope.checked;
-					$scope.current = "<p>Insert Menu Here</p>"
+					$scope.current = "<p>Insert Menu Here</p>";
 				}
 			break;
 			default:
-			console.log("o is not equal, results:\n");
-			console.log("o:"+o+"\nscope.closed:"+$scope.closed);
-			$scope.current = o;		
-			if($scope.checked){
-				console.log("panel already open, changing content to current project...")
-				if($scope.current == ""){
-					$scope.current = "<p>Nothing here yet.</p>"
-				}
-			}else{
-				console.log("toggling panel.")		
-				$scope.checked = !$scope.checked;
-			}			break;
+				console.log("o is not equal, results:\n");
+				console.log("o:"+o+"\nscope.closed:"+$scope.closed);
+				$scope.current = o;		
+				if($scope.checked){
+					console.log("panel already open, changing content to current project...")
+					if($scope.current == ""){
+						$scope.current = "<p>Nothing here yet.</p>"
+					}
+				}else{
+					console.log("toggling panel.")		
+					$scope.checked = !$scope.checked;
+				}			
+			break;
 		}
 		/*if(o == $scope.closed){ //CHANGE THIS TO A SWITCH STATEMENT, ADD 'MENU' CASE
 			console.log("o is equal, closing panel.");
@@ -81,8 +84,12 @@ port.controller("PortCtrl", ['$scope', '$http', function($scope, $http){
 			'<a class="closeBtn" title="Back to Portfolio" ng-click="toggle('+"'close'"+')">X</a>'+
 			'<p ng-bind-html="current.descA"></p>'+
 			'<div ng-bind-html="current.descB"></div>'+
-			'</section>'
+			'</section>',
+		link: function(scope, elem, attrs){
+			console.log(elem);
+		}	
 	}
+	
 })
 .directive("resize", function($window){
 	return {
