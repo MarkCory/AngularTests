@@ -1,16 +1,48 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="angTestApp">
+<html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Angular Test 1: Controllers</title>
-	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.min.js" type="text/javascript"></script>
-	<script src="ui/js/ng/controllers.js"></script>
-	<link rel="stylesheet" href="ui/css/style.css">
+	<title>The Portfolio of Mark Cory Anderson</title>
+	<link rel="stylesheet" href="ui/css/portfolio.css">
 </head>
-<body ng-controller="testController as entries">
-	<input type="text" ng-model="entries.styles.class" placeholder="Enter 'danger' or 'wonder' here">
-	<div ng-class="entries.styles.class">
-		<p ng-repeat="entry in vars"><span>{{entry.name}}</span> = <span>{{entry.value}}</span></p>
+<body ng-app="portfolio" resize>
+	<script type="text/ng-template" id="longdesc.html">
+			<section class="project">
+			<a class="closeBtn" title="Back to Portfolio" ng-click="toggle('close')">X</a>
+			<p ng-bind-html="current.descA"></p>
+			<div ng-bind-html="current.descB"></div>
+			<a ng-href={{'/#/project/'+pNum}}>View Case Study</a>
+			</section>
+	</script>
+	<div ng-controller="PortCtrl" class="container">
+		<header>
+
+			<div class="ego">
+				<h1>Mark Cory Anderson</h1>
+				<h2>Web Developer</h2>
+				
+			</div>
+			<div class="searchBar">
+				
+				<div class="contact">
+					<dl>
+						<dd><a ng-href="#/about" class="menu">About Me</a></dd>
+						<dd><a class="menu">Email Me</a></dd>
+						<dd><a class="menu">LinkedIn</a></dd>
+					</dl>
+				</div>
+				<label for="projSearch"></label><input type="text" placeholder="Search Portfolio" ng-model="projSearch" id="projSearch" />
+			</div>
+		</header>
+		
+		<ng-view></ng-view>
+
 	</div>
 </body>
+	<script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.min.js" type="text/javascript"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular-route.js" type="text/javascript"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular-sanitize.js"></script>
+	<script src="node_modules/angular-pageslide-directive/dist/angular-pageslide-directive.min.js"></script>
+	<script src="ui/js/ng/portfolio.js"></script>
 </html>

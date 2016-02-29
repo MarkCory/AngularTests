@@ -1,4 +1,5 @@
 [{
+	"pid":0,
 	"projectShortName": "Campaign for Georgetown",
 	"projectLongName": "",
 	"descA": "This site was created to showcase Georgetown University's $1.5 billion dollar campaign.",
@@ -11,6 +12,7 @@
 	"tags":["html", "css", "javascript", "photoshop", "georgetown", "jQuery"]
 },
 {
+	"pid":1,
 	"projectShortName": "Class Ambassadors",
 	"projectLongName": "",
 	"descA":"Georgetown's Office of Advancement needed a website to provide resources to class leaders and relay class fundraising information. The class progress page makes use of Charts.js for animated graphs.",
@@ -23,6 +25,7 @@
 	"tags":["html", "css", "javascript", "photoshop", "georgetown", "charts", "charts.js", "chartsjs", "jQuery"]
 },
 {
+	"pid":2,
 	"projectShortName": "Advent Calendar",
 	"projectLongName": "",
 	"descA":"Launched in December 2014, this advent calendar counted down until Christmas day with each day's icon flipped to red. Users can click on a day to find a goodie, game, or other activity.",
@@ -35,6 +38,7 @@
 	"tags":["html", "css", "javascript", "masonry", "photoshop"]
 },
 {
+	"pid":3,
 	"projectShortName": "A Very Hoya Holiday",
 	"projectLongName": "",
 	"descA":"For holiday season 2012 I tried my hand at <em>parallax scrolling</em>, and had a blast creating the graphics for this short poem.",
@@ -47,6 +51,7 @@
 	"tags":["html", "css", "javascript", "parallax", "photoshop"]
 },
 {
+	"pid":4,
 	"projectShortName": "Georgetown Alumni Magazine",
 	"projectLongName": "",
 	"descA":"Before Georgetown alumni publications were housed in a Drupal environment, I was tasked with building a site to host featured articles separate from the main alumni site, which at the time was plagued by an unworkable CMS.",
@@ -59,6 +64,7 @@
 	"tags":["html", "css", "javascript", "responsive"]
 },
 {
+	"pid":5,
 	"projectShortName": "Georgetown Giving Donation Form",
 	"projectLongName": "",
 	"descA":"The backend for the university's giving forms were vendor-provided and the supplied front-end design was bare. I had access to a stylesheet and a javascript file to effect changes.",
@@ -71,6 +77,7 @@
 	"tags":["css", "javascript"]
 },
 {
+	"pid":6,
 	"projectShortName": "John Carroll Weekend",
 	"projectLongName": "",
 	"descA":"An annual university event that brings alumni together to share ideas and enjoy the culture of its international locations. The responsive design features transitioning background images overlaid with semi-transparent panels. ",
@@ -83,6 +90,7 @@
 	"tags":["html", "css", "javascript", "jQuery", "angular"]
 },
 {
+	"pid":7,
 	"projectShortName": "Georgetown University Reunion",
 	"projectLongName": "",
 	"descA":"Georgetown University's reunion event site. ",
@@ -95,6 +103,7 @@
 	"tags":["html", "css", "javascript", "photoshop"]
 },
 {
+	"pid":8,
 	"projectShortName": "Georgetown University Homecoming",
 	"projectLongName": "",
 	"descA":"Georgetown University's homecoming event site.",
@@ -107,6 +116,7 @@
 	"tags":["html", "css", "javascript", "flash"]
 },
 {
+	"pid":9,
 	"projectShortName": "Georgetown Investment Report",
 	"projectLongName": "",
 	"descA":"The advancement office at Georgetown must make its case to donors and board members. The fundraising data was traditionally presented in printed format, and I undertook the creation of its digital counterpart.",
@@ -119,6 +129,7 @@
 	"tags":["html", "css", "javascript", "jQuery", "responsive"]
 },
 {
+	"pid":10,
 	"projectShortName": "Corporate and Foundation Relations",
 	"projectLongName": "",
 	"descA":"This is a jQuery application designed to search grant submissions. The data is stored using a Google form, and parsed from the resulting CSV into JSON.",
@@ -131,6 +142,7 @@
 	"tags":["html", "css", "javascript", "JSON"]
 },
 {
+	"pid":11,
 	"projectShortName": "Georgetown Alumni Weekend: Hong Kong",
 	"projectLongName": "",
 	"descA":"Georgetown hosts seasonal alumni events as well as international gatherings to ensure that the most far-flung Hoyas maintain contact with the Georgetown community.",
@@ -143,6 +155,7 @@
 	"tags":["html", "css", "javascript"]
 },
 {
+	"pid":12,
 	"projectShortName": "March Madness 2014",
 	"projectLongName": "",
 	"descA":"This site commemorated the 30th anniversary of the 1984 NCAA championship win by the Georgetown Hoyas. The experience is driven by a masonry.js interface where tiles part to present content in the center.",
@@ -155,6 +168,7 @@
 	"tags":["html", "css", "javascript", "masonry"]
 },
 {
+	"pid":13,
 	"projectShortName": "Haysbert Moultrie",
 	"projectLongName": "",
 	"descA":"",
@@ -167,6 +181,7 @@
 	"tags":["html", "css", "javascript", "bootstrap"]
 },
 {
+	"pid":14,
 	"projectShortName": "Quality Consultants Group",
 	"projectLongName": "",
 	"descA":"",

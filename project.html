@@ -1,10 +1,15 @@
-<section class="project">
-<a class="closeBtn" title="Back to Portfolio" ng-click="toggle('close')">X</a>
-<div ng-bind-html="current"></div>
-<figure ng-show="project.animations">
-	<img ng-src="project.animations" />
-	<figcaption >
-		<p ng-bind-html="project.descB"></p>
-	</figcaption>
-</figure>
-</section>
+<div class="projectView">
+	<a href="/#/" class="closeBtn">Return to Portfolio</a>
+	<section class="project">
+	<div>
+		<h1>{{projects[pid].projectShortName}}</h1>
+		<p ng-bind-html="projects[projI].descA"></p>
+		<p ng-bind-html="projects[projI].descB"></p>
+		<p style="background:#FFF;">{{projects[pid]}}</p>
+	</div>
+	</section>
+	<pageslide ps-open="checked" ps-side="right" ps-size="38.2%" ps-push="true" >
+		<div class="longdesc">
+		</div>
+	</pageslide>
+</div>

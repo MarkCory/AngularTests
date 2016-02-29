@@ -1,18 +1,48 @@
-port = angular.module("portfolio", ['ngSanitize', 'pageslide-directive']);
+port = angular.module("portfolio", ['ngRoute', 'ngSanitize', 'pageslide-directive']);
 
-port.controller("PortCtrl", ['$scope', '$http', function($scope, $http){
+port.config(function($routeProvider){
+	$routeProvider
+		.when('/',
+		{
+			templateUrl: "../../../portfolio.html",
+			controller: "PortCtrl"
+		})
+		.when('/project/:number',
+		{
+			templateUrl: "../../../project.html",
+			controller: "ProjCtrl"
+		})
+		// .when('/about',
+		// {
+		// 	template: "<a ng-click='toggle(\"close\", 0)' ng-href='../'>Go Back</a><h1>About Mark</h1>"
+		// })
+		.otherwise({
+			redirectTo:'/'
+		})
+		// .when('/project/:name/:index',
+		// {
+		// 	templateUrl: "longdesc.html",
+		// 	controller: "PortCtrl"
+		// })
+})
+
+port.controller("PortCtrl", ['$scope', '$http', '$route', function($scope, $http, $routeParams){
 	$http.get("ui/js/ng/projects.json")
 		.then(function(result){
 			$scope.projects = result.data;
-			// console.log(result.data);
+			console.log(result.data);
+			
 		});
 	//variables and functions used for the pageslide directive	
+	// $scope.pNum = $routeParams;
 	$scope.checked = false;
 	$scope.current;
 	$scope.closed = "close";
 
-	$scope.toggle = function(o){
-		// console.log(o);
+	$scope.toggle = function(o, i){
+		console.log("index:");
+		console.log(i);
+		$scope.pNum = i; //when project is clicked, store index
 		$scope.swidth = window.innerWidth;
 		switch(o){
 			case $scope.closed:
@@ -80,13 +110,9 @@ port.controller("PortCtrl", ['$scope', '$http', function($scope, $http){
 
 	return {
 		restrict: 'C',
-		template: '<section class="project">'+
-			'<a class="closeBtn" title="Back to Portfolio" ng-click="toggle('+"'close'"+')">X</a>'+
-			'<p ng-bind-html="current.descA"></p>'+
-			'<div ng-bind-html="current.descB"></div>'+
-			'</section>',
+		templateUrl: 'longdesc.html',
 		link: function(scope, elem, attrs){
-			console.log(elem);
+			// console.log(elem);
 		}	
 	}
 	
@@ -102,28 +128,18 @@ port.controller("PortCtrl", ['$scope', '$http', function($scope, $http){
 			});
 		}
 	}
-})
-.directive("masonry", function(){
-	return {
-		restrict: 'C',
-		link: function(scope, elem, attrs){
-			// elem.masonry({ itemSelector: '.masonry-brick', columnWidth: 200});
-		}
-	}
-})
-.directive("masonry-brick", function(){
-	return {
-		restrict: 'C',
-		link: function(scope, elem, attrs){
-			// elem.parents('.masonry').masonry('reload');
-		}
-	}
 });
-
 port.filter("sanitize", ['$sce', function($sce){
 	return function(htmlCode){
 		return $sce.trustAsHtml(htmlCode);
 	};
 }]);
-
-
+port.controller("ProjCtrl", ['$scope', '$http', '$route', function($scope, $http, $routeParams){
+	$http.get("ui/js/ng/projects.json")
+		.then(function(result){
+			$scope.projects = result.data;
+			console.log(result.data);
+			
+		});
+	$scope.pid = $routeParams.current.params.number;
+}]);
