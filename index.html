@@ -6,27 +6,46 @@
 	<link rel="stylesheet" href="ui/css/portfolio.css">
 </head>
 <body ng-app="portfolio" resize>
+	<script type="text/ng-template" id="about.html">
+		<div class="projectView">
+			<a href="/#/" class="closeBtn">Return to Portfolio</a>
+			<section class="project">
+				<div>
+					<h1>About Mark</h1>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis maiores minima maxime officia repellat tenetur est fugiat quam eum tempore! Fugit, recusandae eum. Exercitationem earum sunt, incidunt quidem illum sint?
+					</p>
+				</div>
+			</section>
+		</div>
+	</script>
 	<script type="text/ng-template" id="longdesc.html">
 			<section class="project">
 			<a class="closeBtn" title="Back to Portfolio" ng-click="toggle('close')">X</a>
 			<p ng-bind-html="current.descA"></p>
 			<div ng-bind-html="current.descB"></div>
-			<a ng-href={{'/#/project/'+pNum}}>View Case Study</a>
+			<a ng-href={{'/#/project/'+pNum}} style="text-decoration:none;"><input type="button" value="View Case Study"></a>
+				
 			</section>
+			{{projects[pid].tags}}
+			<div class="tags" ng-repeat="tag in current.tags">
+					<span style="">
+						{{tag}}
+					</span>
+			</div>
 	</script>
 	<div ng-controller="PortCtrl" class="container">
 		<header>
 
 			<div class="ego">
 				<h1>Mark Cory Anderson</h1>
-				<h2>Web Developer</h2>
+				<h2>Web Developer, absolute bad-ass</h2>
 				
 			</div>
 			<div class="searchBar">
 				
 				<div class="contact">
 					<dl>
-						<dd><a ng-href="#/about" class="menu">About Me</a></dd>
+						<dd><a ng-href="/#/about" ng-click="toggle('close')" class="menu">About Me</a></dd>
 						<dd><a class="menu">Email Me</a></dd>
 						<dd><a class="menu">LinkedIn</a></dd>
 					</dl>
@@ -35,7 +54,9 @@
 			</div>
 		</header>
 		
-		<ng-view></ng-view>
+		<ng-view 
+		[onload="enter"]
+		[autoscroll="true"]></ng-view>
 
 	</div>
 </body>

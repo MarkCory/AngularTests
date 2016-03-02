@@ -3,8 +3,24 @@
 	<section class="project">
 	<div>
 		<h1>{{projects[pid].projectShortName}}</h1>
-		<p ng-bind-html="projects[projI].descA"></p>
-		<p ng-bind-html="projects[projI].descB"></p>
+		<h2>Description</h2>
+		<p ng-bind-html="projects[pid].descA"></p>
+		<p ng-bind-html="projects[pid].descB"></p>
+		<h2>My Role</h2>
+		<p ng-bind-html="projects[pid].role"></p>
+		<h2>Project Details</h2>
+		<div ng-repeat="image in projects[pid].images" ng-show="projects[pid].images">
+		<figure>
+			<img ng-src={{projects[pid].path}}{{image}}>
+			<figcaption>{{projects[pid].imageDesc[$index]}}</figcaption>
+		</figure>
+		</div>
+		<div ng-repeat="anim in projects[pid].animations" ng-show="projects[pid].animations">
+			<figure>
+				<img ng-src={{projects[pid].path}}{{anim}} alt="">
+				<figcaption></figcaption>
+			</figure>
+		</div>
 		<p style="background:#FFF;">{{projects[pid]}}</p>
 	</div>
 	</section>

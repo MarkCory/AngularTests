@@ -12,10 +12,11 @@ port.config(function($routeProvider){
 			templateUrl: "../../../project.html",
 			controller: "ProjCtrl"
 		})
-		// .when('/about',
-		// {
-		// 	template: "<a ng-click='toggle(\"close\", 0)' ng-href='../'>Go Back</a><h1>About Mark</h1>"
-		// })
+		.when('/about',
+		{
+			templateUrl: "about.html",
+			controller: "PortCtrl"
+		})
 		.otherwise({
 			redirectTo:'/'
 		})
@@ -107,7 +108,6 @@ port.controller("PortCtrl", ['$scope', '$http', '$route', function($scope, $http
 	}
 })
 .directive("longdesc", function(){
-
 	return {
 		restrict: 'C',
 		templateUrl: 'longdesc.html',
