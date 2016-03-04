@@ -233,6 +233,9 @@ section.project img:after {
 }
 .project figure img {margin:0; padding:0;width:100%; margin-bottom:.5em; display: block;}
 .project figure figcaption {background:#EFEFEF; font-size: 1em; font-family:sans-serif; display:block; margin-top:1em; padding:1em;}
+.bioStats {background: #CCC; padding:1em; margin:1em; width:25%; float:right; border:1px solid #999; font-family: sans-serif;}
+dl.bioStats dd {margin:0; padding:0; line-height:1.4em;}
+dl.bioStats dd[title] { cursor:help;}
 @media screen and (max-width: 2160px) and (min-width: 1920px) {
 	.container {width:1920px;}
 	header {background-size: auto 100%;}

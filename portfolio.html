@@ -1,5 +1,5 @@
 		<div class="portfolio">
-				<div class="proj" ng-repeat="project in projects | filter:projSearch | orderBy:'year'">
+				<div class="proj" ng-repeat="project in projects | filter:projSearch | orderBy:'-year'">
 					<div class="heroImg" ng-repeat="cover in project.cover | limitTo: 1">
 						<img ng-src="{{project.path}}{{cover}}" class="projImg" />
 					</div>

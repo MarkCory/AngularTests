@@ -25,8 +25,24 @@ port.config(function($routeProvider){
 		// 	templateUrl: "longdesc.html",
 		// 	controller: "PortCtrl"
 		// })
-})
+});
+var routeLoadingIndicator = function($rootScope){
+  return {
+    restrict:'E',
+    template:"<h1 ng-if='isRouteLoading'>Loading...</h1>",
+    link:function(scope, elem, attrs){
+      scope.isRouteLoading = false;
 
+      $rootScope.$on('$routeChangeStart', function(){
+        scope.isRouteLoading = true;
+      });
+
+      $rootScope.$on('$routeChangeSuccess', function(){
+        scope.isRouteLoading = false;
+      });
+    }
+  };
+};
 port.controller("PortCtrl", ['$scope', '$http', '$route', function($scope, $http, $routeParams){
 	$http.get("ui/js/ng/projects.json")
 		.then(function(result){
@@ -128,7 +144,8 @@ port.controller("PortCtrl", ['$scope', '$http', '$route', function($scope, $http
 			});
 		}
 	}
-});
+})
+.directive("routeLoadingIndicator", routeLoadingIndicator);
 port.filter("sanitize", ['$sce', function($sce){
 	return function(htmlCode){
 		return $sce.trustAsHtml(htmlCode);

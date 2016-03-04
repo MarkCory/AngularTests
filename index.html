@@ -11,12 +11,29 @@
 			<a href="/#/" class="closeBtn">Return to Portfolio</a>
 			<section class="project">
 				<div>
-					<h1>About Mark</h1>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis maiores minima maxime officia repellat tenetur est fugiat quam eum tempore! Fugit, recusandae eum. Exercitationem earum sunt, incidunt quidem illum sint?
-					</p>
+					<h1>About Me</h1>
+					<h2>Who is Mark?</h2>
+					<dl class="bioStats">
+						<dd title="Myers-Briggs Type Indicator">MBTI: INTP (Architect)</dd>
+						<dd title="Strauss-Howe Generational Theory">Cohort: X/Millennial cusp</dd>
+					</dl>
+					<p>I’m a guy who has been tinkering with computers since the days of Apple IIs, kid pix, and 386x processors. I come from two generations of natural automobile mechanics (gearheads). I grew up taking things apart and putting them back together, fixing my video game controllers, but also drawing, and posting my drawings to a GeoCities account.</p>
+					<p>I received my first personal computer, a pentium, at 13 and I’ve been a keyboard junkie ever since. Eventually, I got into photoshop around version 5. I was mostly into using filters and awful lens flares. When 5.5 came out, I began to use the slice tool and ImageReady to create very basic websites. I needed to do more than what ImageReady allowed, and that was when I started getting into the actual code. I began advocating for both Photoshop and web development to be supported in my high school and later became a founding member of the school’s HTML club.</p>
+					<h2>A web developer, you say?</h2>
+					<p>I went to the Art Institute because I was primarily aiming to be an illustrator, but after a discussion with the admissions advisor I decided to enroll in their Multimedia and Web Development program. I took to Flash immediately, but the big shift came when I took a course in JavaScript. Already familiar with basic HTML, being introduced to JavaScript really opened me up to the field. From that point for most of my time at the Art Institute I constantly carried a very thick O’reilly DHTML bible.</p>
+					<p>Afterward, I worked at a variety of places, design and marketing firms, a technology training company, the International Association of Fire Chiefs, numerous temporary assignments, freelance work, and somewhere in the middle of it all, an art store. I’ve made promotional websites, financial websites, corporate websites, e-commerce websites, higher education websites, you name it, I’ve probably had some experience with it. Ultimately I found placement at Georgetown University and they decided to keep me. I used my skills there while attending classes and graduated with a B.A., class of ‘15.</p>
+					<h2>What about your personal life?</h2>
+					<p>Now, I’m into Angular, Drupal, Linux, and the command line interface, relentlessly expanding my skillset. I enjoy drawing, reading philosophical texts, tinkering with microelectronics, playing video games, snowboarding, motorcycling, and bicycling. I am always interested in technological breakthroughs and I’m very excited for the coming wave of augmented reality as I’ve been nearly 10 years waiting for the day I could exchange a file with someone as though it were a physical object. Pardon my drool.</p>
+					<h2>Why do you use your middle name?</h2>
+					<p>Because there are tons of Mark Andersons out there, as I discover every time a sales clerk asks to look up my information by name. One’s a football player, and I’m even connected with one on linkedIn. Beyond distinguishability, it has a nice 1, 2, 3 syllable pattern. Why have a middle name if you never use it?</p>
 				</div>
 			</section>
 		</div>
+		<pageslide ps-open="checked" ps-side="right" ps-size="38.2%" ps-push="true" >
+			<div class="longdesc">
+			</div>
+		</pageslide>
+
 	</script>
 	<script type="text/ng-template" id="longdesc.html">
 			<section class="project">
@@ -45,7 +62,7 @@
 				
 				<div class="contact">
 					<dl>
-						<dd><a ng-href="/#/about" ng-click="toggle('close')" class="menu">About Me</a></dd>
+						<dd><a ng-click="toggle('close')" ng-href="/#/about" class="menu">About Me</a></dd>
 						<dd><a class="menu">Email Me</a></dd>
 						<dd><a class="menu">LinkedIn</a></dd>
 					</dl>
@@ -53,8 +70,8 @@
 				<label for="projSearch"></label><input type="text" placeholder="Search Portfolio" ng-model="projSearch" id="projSearch" />
 			</div>
 		</header>
-		
-		<ng-view 
+		<route-loading-indicator></route-loading-indicator>
+		<ng-view ng-if="!isRouteLoading"
 		[onload="enter"]
 		[autoscroll="true"]></ng-view>
 
