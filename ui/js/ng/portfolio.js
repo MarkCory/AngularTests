@@ -17,6 +17,11 @@ port.config(function($routeProvider){
 			templateUrl: "about.html",
 			controller: "PortCtrl"
 		})
+		.when('/contact',
+		{
+			templateUrl: "contact.html",
+			controller: "PortCtrl"
+		})
 		.otherwise({
 			redirectTo:'/'
 		})
@@ -147,10 +152,15 @@ port.controller("PortCtrl", ['$scope', '$http', '$route', function($scope, $http
 })
 .directive("routeLoadingIndicator", routeLoadingIndicator);
 port.filter("sanitize", ['$sce', function($sce){
-	return function(htmlCode){
-		return $sce.trustAsHtml(htmlCode);
-	};
-}]);
+		return function(htmlCode){
+			return $sce.trustAsHtml(htmlCode);
+		};
+	}]);
+port.filter("trustUrl", ['$sce', function ($sce) {
+        return function (recordingUrl) {
+            return $sce.trustAsResourceUrl(recordingUrl);
+        };
+    }]);
 port.controller("ProjCtrl", ['$scope', '$http', '$route', function($scope, $http, $routeParams){
 	$http.get("ui/js/ng/projects.json")
 		.then(function(result){
@@ -159,4 +169,11 @@ port.controller("ProjCtrl", ['$scope', '$http', '$route', function($scope, $http
 			
 		});
 	$scope.pid = $routeParams.current.params.number;
+	$scope.pidn = function(){
+		projNum = parseInt($routeParams.current.params.number) + 1;
+		if(projNum >= $scope.projects.length){
+			projNum = 1;
+		}
+		return projNum;
+	}
 }]);

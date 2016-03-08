@@ -159,6 +159,7 @@ body.ng-pageslide-body-closed::before {
 .ng-pageslide {
 	/*background:url('../img/dark_embroidery.png');*/
 	background: #FFF;
+	overflow-y: scroll!important;
 }
 section.project {
 	margin:2em;
@@ -176,6 +177,21 @@ section.project {
 	text-align: center;
 	position: absolute;
 	top:0; left:0;
+	transition:background .4s;
+}
+.nextBtn {
+	cursor:pointer;
+	background: #008040;
+	color:#FFF;
+	width:30px; height:30px;
+	line-height:30px;
+	border-radius:30px;
+	border-top-right-radius:0;
+	display:block;
+	font-family: sans-serif;
+	text-align: center;
+	position: absolute;
+	top:0; right:0;
 	transition:background .4s;
 }
 section.project .closeBtn:hover {
@@ -196,6 +212,10 @@ section.project img:after {
 .projectView .closeBtn {
 	width:auto; padding: 0 2em 0 2em; text-decoration: none;
 	border-top-right-radius: 0; border-bottom-left-radius: 0;
+}
+.projectView .nextBtn {
+	width:auto; padding: 0 2em 0 2em; text-decoration: none;
+	border-top-left-radius: 0; border-bottom-right-radius: 0;
 }
 .projectView .project > div {margin:2em; overflow: auto;}
 .projectView .project, .projectView .project div p {margin: 0; margin-bottom: 1em;}
@@ -225,7 +245,7 @@ section.project img:after {
 }
 .project h1, .project h2, .project h3 {font-family:sans-serif;}
 .project h1 {font-size:1.6rem;}
-.project h2 {font-size:1.4rem; font-style: italic; color:#008040; margin-bottom: .25em;}
+.project h2 {font-size:1.4rem; font-style: italic; color:#008040; margin-bottom: .5em;}
 .project h3 {font-size:1.2rem; color:#fc6;}
 .project figure  {
 	width:90%; margin:0 auto; display: block; clear:both; overflow: auto; border:4px solid #FFF; box-shadow:0px 0px 5px #AAA;
@@ -233,9 +253,20 @@ section.project img:after {
 }
 .project figure img {margin:0; padding:0;width:100%; margin-bottom:.5em; display: block;}
 .project figure figcaption {background:#EFEFEF; font-size: 1em; font-family:sans-serif; display:block; margin-top:1em; padding:1em;}
-.bioStats {background: #CCC; padding:1em; margin:1em; width:25%; float:right; border:1px solid #999; font-family: sans-serif;}
+.project figure.left img {display:block; width:50%; float:left; margin:0;}
+.project figure.left figcaption {display:block; margin-top:0; margin-left:50%; padding-left:1em; background:#FFF; font-size:.9em;}
+.project figure.right img {display:block; width:50%; float:right; margin:0;}
+.project figure.right figcaption {display:block; margin-top:0; margin-right:50%; padding-right:1em; background:#FFF; font-size:.9em;}
+.project figure.natural img {display:block; width:auto; margin:1em auto; float:none;}
+.project figure.natural figcaption {display:block; margin-top:0; padding-right:1em; background:#FFF; font-size:.9em;}
+.project video {width:90%; margin:0 auto; display: block;}
+.project div div.vidDesc {width:90%; margin:0 auto; display: block; background:#EFEFEF;}
+.project div div.vidDesc * {padding:1em;}
+.bioStats {background: #EFEFEF; padding:1em; margin:0 1em 1em; width:25%; float:right; border:1px solid #999; font-family: sans-serif;}
 dl.bioStats dd {margin:0; padding:0; line-height:1.4em;}
 dl.bioStats dd[title] { cursor:help;}
+.contact dl dt {font-size: 1.3em; color:#008040; font-family: sans-serif;}
+.contact dl dd {margin:0 0 1em;}
 @media screen and (max-width: 2160px) and (min-width: 1920px) {
 	.container {width:1920px;}
 	header {background-size: auto 100%;}
@@ -261,6 +292,8 @@ dl.bioStats dd[title] { cursor:help;}
 	.searchBar {margin:0; bottom:1em; left:auto; right:auto; width:100%;}
 	.searchBar input {width:80%; margin:0 auto; display:block;}
 	header .contact dl {left:10%;}
+	.project figure.natural img {width:100%;}
+	.bioStats {width:100%; margin:1em 0; border:none; display: block; float:none;}
 
 }
 @media screen and (max-width: 479px) and (min-width: 240px) {
@@ -274,5 +307,6 @@ dl.bioStats dd[title] { cursor:help;}
 	desc {top:0; width:66%; left:34%; position:absolute; border-radius:0; background:rgba(255,255,255,.9);}
 	header .contact dl {height:3em; top:-3em; left:60px;}
 	header .contact dl dd a {height: 3em;}
+	.bioStats {width:100%; margin:1em 0; border:none; display: block; float:none;}
 
 }
